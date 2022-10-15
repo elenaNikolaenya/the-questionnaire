@@ -11,7 +11,7 @@ askBtn.addEventListener('click', showLast);
 function showLast() {
   let message = '';
 
-  fetch('http://46.21.248.81:3001/my-users', {
+  fetch('https://polinashneider.space/my-users', {
     method: 'GET',
     headers: {
       'Accept': 'application/json',
@@ -22,7 +22,7 @@ function showLast() {
   .then((result) => result.json())
   .then((users) => {    
     if (users.length) {
-      fetch('http://46.21.248.81:3001/last-user', {
+      fetch('https://polinashneider.space/last-user', {
         method: 'GET',
         headers: {
           'Accept': 'application/json',
@@ -86,7 +86,7 @@ form.addEventListener("submit", (event) => {
     agreeStatus = false;
   }   
 
-  fetch(`http://46.21.248.81:3001/user`, {
+  fetch(`https://polinashneider.space/user`, {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
@@ -103,7 +103,7 @@ form.addEventListener("submit", (event) => {
   }) 
   .then((response) => {
     if (response.ok) {
-      fetch('http://46.21.248.81:3001/my-users', {
+      fetch('https://polinashneider.space/my-users', {
         method: 'GET',
         headers: {
           'Accept': 'application/json',
