@@ -16,8 +16,18 @@
     <title>Анкета</title>
   </head>
   <body>
-    <div>
-      <h1>✨Анкета✨</h1>
+    <div id="greeting">
+      <h1>Вообще-то тут очередь!!!</h1>
+      <button id="ask" class="ask-btn">Спросить, кто последний</button>
+    </div>
+
+    <div id="message-container" class="hidden">
+      <p id="message" class="message-text">hfdsfgb</p>
+      <button id="ok" class="ok-btn">OK</button>
+    </div>
+
+    <div id="questionnaire" class="hidden">
+      <h2>✨Анкета✨</h2>
       <form class="form">
         <div class="form-row">
           <label for="name">Имя <span class="required">*</span></label>
@@ -61,7 +71,7 @@
           <input id="clear" class="clear-btn" type="reset" value="Очистить" />
         </div>
       </form>
-    </div>
+    </div>    
     <script src="script.js"></script>
   </body>
 </html>
