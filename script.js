@@ -1,4 +1,4 @@
-//в начале идет задание со *
+//here is the 5th part of the task
 const askBtn = document.querySelector("#ask");
 const messageBox = document.querySelector("#message-container");
 const messageText = document.querySelector("#message");
@@ -63,7 +63,7 @@ okBtn.addEventListener('click', () => {
   questionnaire.classList.remove('hidden');
 })
 
-//отсюда идет основное задание
+//here starts the main part of the task
 
 const form = document.querySelector(".form");
 const nameInput = document.querySelector("#name");
@@ -74,11 +74,9 @@ const agreeInput = document.querySelector("#agree");
 
 
 form.addEventListener("submit", (event) => {
-  // Предотвращает действие браузера по умолчанию. В данном случае — отправку формы
-  // https://learn.javascript.ru/default-browser-action
-  event.preventDefault();
-  // галочка с согласием на обработку информации обязательна, так что "agree": true будет верно для всех
-  // по умолчанию, но предположим, что это не так и ее можно или поставить, или нет
+    event.preventDefault();
+  // checkbox is required, so always there will be    "agree": true  
+  // but let's assume that the mark at checkbox is not requred and we have options
   let agreeStatus = null;
   if (agreeInput.checked) {
     agreeStatus = true;
@@ -114,7 +112,7 @@ form.addEventListener("submit", (event) => {
       .then((result) => result.json())
       .then((users) => {
         message = `Ваш номер в очереди ${users.length}! Мы с вами свяжемся)
-         А пока можете записать еще кого-нибудь - очередь-то кророткая ;)`;
+         А пока можете записать еще кого-нибудь - очередь-то короткая ;)`;
         showMessage(message, questionnaire);
         form.reset();
       })    

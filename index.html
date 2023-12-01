@@ -22,7 +22,7 @@
     </div>
 
     <div id="message-container" class="hidden">
-      <p id="message" class="message-text">hfdsfgb</p>
+      <p id="message" class="message-text"></p>
       <button id="ok" class="ok-btn">OK</button>
     </div>
 
@@ -34,9 +34,7 @@
           <input type="text" id="name" name="name" required />
         </div>
         <div class="form-row">
-          <label for="secondName"
-            >Фамилия <span class="required">*</span></label
-          >
+          <label for="secondName">Фамилия <span class="required">*</span></label>
           <input type="text" id="secondName" name="secondName" required />
         </div>
         <div class="form-row">
@@ -44,31 +42,21 @@
           <input type="email" id="email" name="email" required />
         </div>
         <div class="form-row">
-          <label for="phone">
-            <span>Телефон <span class="required">*</span></span>
+          <label for="phone"> <span>Телефон <span class="required">*</span></span>
             <i
               class="fa-regular fa-circle-question"
               title="Формат: 7 XXX XXX XX XX"
             ></i>
           </label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            pattern="[0-9]{11}"
-            required
-          />
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required/>
         </div>
         <div class="form-row inline">
-          <label for="agree"
-            >Я согласна на обработку персональных данных
-            <span class="required">*</span>
-          </label>
+          <label for="agree">Я согласна на обработку персональных данных<span class="required">*</span></label>
           <input type="checkbox" id="agree" name="agree" required />
         </div>
         <div class="controls">
-          <input id="button" class="send-btn" type="submit" value="Отправить" />
-          <input id="clear" class="clear-btn" type="reset" value="Очистить" />
+          <input id="button" class="send-btn" type="submit" value="Отправить"/>
+          <input id="clear" class="clear-btn" type="reset" value="Очистить"/>
         </div>
       </form>
     </div>    
